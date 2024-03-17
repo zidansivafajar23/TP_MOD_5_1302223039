@@ -6,14 +6,27 @@ public class HaloGeneric
         Console.WriteLine($"Halo {user}");
     }
 }
+
+public class DataGeneric<T>
+{
+    private T Data;
+    public DataGeneric(T data)
+    {
+        Data = data;
+    }
+    public void PrintData()
+    {
+        Console.WriteLine($"Data yang tersimpan adalah: {Data}");
+    }
+}
 class Program
 {
     private static void Main(string[] args)
     {
-        // Membuat instance dari kelas HaloGeneric
         HaloGeneric halo = new HaloGeneric();
-
-        // Memanggil metode SapaUser dengan menyediakan argumen string "Rakha"
         halo.SapaUser<String>("Zidan");
+
+        DataGeneric<string> dataGeneric = new DataGeneric<string>("1302223039");
+        dataGeneric.PrintData();
     }
 }
