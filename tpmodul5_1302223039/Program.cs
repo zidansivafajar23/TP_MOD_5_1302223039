@@ -13,7 +13,7 @@ class Program
         // Membuat instance dari kelas HaloGeneric
         HaloGeneric halo = new HaloGeneric();
 
-        // Memanggil metode SapaUser dengan menyediakan argumen string "Rakha"
+        // Memanggil metode SapaUser dengan menyediakan argumen string "Zidan"
         halo.SapaUser<String>("Zidan");
     }
 }
